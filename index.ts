@@ -25,10 +25,10 @@ export * from './src/utilities.service';
     CreditCardMaskPipe
   ]
 })
-export class SampleModule {
+export class UtilitiesModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: SampleModule,
+      ngModule: UtilitiesModule,
       providers: [SampleService]
     };
   }
