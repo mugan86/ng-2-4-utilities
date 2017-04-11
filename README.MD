@@ -1,4 +1,4 @@
-# ng-2-4-utilities
+# Angular 2/4 Utilities library
 
 ## Installation
 
@@ -20,12 +20,12 @@ and then from your Angular `AppModule`:
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'ng-2-4-utilities';
+import { UtilitiesModule } from 'ng-2-4-utilities';
 
 @NgModule({
   declarations: [
@@ -35,10 +35,11 @@ import { SampleModule } from 'ng-2-4-utilities';
     BrowserModule,
 
     // Specify your library as an import
-    LibraryModule
+    UtilitiesModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
 ```
