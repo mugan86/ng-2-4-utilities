@@ -7,6 +7,7 @@ import { AllWordsCapitalizePipe } from './src/pipes/all-words-capitalize.pipe';
 import { ReverseStrPipe } from './src/pipes/reverse-str-pipe';
 import { TempConverterPipe } from './src/pipes/temp-converter.pipe';
 import { TrimPipe } from './src/pipes/trim.pipe';
+import { CapitalizePipe } from './src/pipes/capitalize.pipe';
 import { UtilitiesService } from './src/utilities.service';
 
 export * from './src/utilities.component';
@@ -16,6 +17,7 @@ export * from './src/pipes/all-words-capitalize.pipe';
 export * from './src/pipes/reverse-str-pipe';
 export * from './src/pipes/temp-converter.pipe';
 export * from './src/pipes/trim.pipe';
+export * from './src/pipes/capitalize.pipe';
 export * from './src/utilities.service';
 
 @NgModule({
@@ -29,7 +31,8 @@ export * from './src/utilities.service';
     AllWordsCapitalizePipe,
     ReverseStrPipe,
     TempConverterPipe,
-    TrimPipe
+    TrimPipe,
+    CapitalizePipe
   ],
   exports: [
     SampleComponent,
@@ -37,7 +40,7 @@ export * from './src/utilities.service';
     CreditCardMaskPipe,
     AllWordsCapitalizePipe,
     ReverseStrPipe,
-    TempConverterPipe, TrimPipe
+    TempConverterPipe, TrimPipe, CapitalizePipe
   ]
 })
 export class UtilitiesModule {
