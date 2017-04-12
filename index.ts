@@ -29,7 +29,7 @@ export class UtilitiesModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: UtilitiesModule,
-      providers: [SampleService]
+      providers: [UtilitiesService]
     };
   }
 }
