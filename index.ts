@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SampleComponent } from './src/utilities.component';
 import { SampleDirective } from './src/utilities.directive';
 import { CreditCardMaskPipe } from './src/pipes/credit-card-mask.pipe';
-import { SampleService } from './src/utilities.service';
+import { UtilitiesService } from './src/utilities.service';
 
 export * from './src/utilities.component';
 export * from './src/utilities.directive';
