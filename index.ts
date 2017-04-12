@@ -8,6 +8,7 @@ import { ReverseStrPipe } from './src/pipes/reverse-str-pipe';
 import { TempConverterPipe } from './src/pipes/temp-converter.pipe';
 import { TrimPipe } from './src/pipes/trim.pipe';
 import { CapitalizePipe } from './src/pipes/capitalize.pipe';
+import { WikipediaMobileUrlPipe} from './src/pipes/wikipedia-mobile-url.pipe';
 import { UtilitiesService } from './src/utilities.service';
 
 export * from './src/utilities.component';
@@ -18,6 +19,7 @@ export * from './src/pipes/reverse-str-pipe';
 export * from './src/pipes/temp-converter.pipe';
 export * from './src/pipes/trim.pipe';
 export * from './src/pipes/capitalize.pipe';
+export *  from './src/pipes/wikipedia-mobile-url.pipe';
 export * from './src/utilities.service';
 
 @NgModule({
@@ -32,7 +34,8 @@ export * from './src/utilities.service';
     ReverseStrPipe,
     TempConverterPipe,
     TrimPipe,
-    CapitalizePipe
+    CapitalizePipe,
+    WikipediaMobileUrlPipe
   ],
   exports: [
     SampleComponent,
@@ -40,7 +43,8 @@ export * from './src/utilities.service';
     CreditCardMaskPipe,
     AllWordsCapitalizePipe,
     ReverseStrPipe,
-    TempConverterPipe, TrimPipe, CapitalizePipe
+    TempConverterPipe, TrimPipe, CapitalizePipe,
+    WikipediaMobileUrlPipe
   ]
 })
 export class UtilitiesModule {
