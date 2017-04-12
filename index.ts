@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { SampleComponent } from './src/utilities.component';
 import { SampleDirective } from './src/utilities.directive';
 import { CreditCardMaskPipe } from './src/pipes/credit-card-mask.pipe';
+import { AllWordsCapitalizePipe } from './src/pipes/all-words-capitalize.pipe';
 import { UtilitiesService } from './src/utilities.service';
 
 export * from './src/utilities.component';
 export * from './src/utilities.directive';
 export * from './src/pipes/credit-card-mask.pipe';
+export * from './src/pipes/all-words-capitalize.pipe';
 export * from './src/utilities.service';
 
 @NgModule({
@@ -17,12 +19,14 @@ export * from './src/utilities.service';
   declarations: [
     SampleComponent,
     SampleDirective,
-    CreditCardMaskPipe
+    CreditCardMaskPipe,
+    AllWordsCapitalizePipe
   ],
   exports: [
     SampleComponent,
     SampleDirective,
-    CreditCardMaskPipe
+    CreditCardMaskPipe,
+    AllWordsCapitalizePipe
   ]
 })
 export class UtilitiesModule {
