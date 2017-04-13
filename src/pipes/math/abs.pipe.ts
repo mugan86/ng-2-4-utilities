@@ -9,6 +9,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({name: 'mathAbs'})
 export class MathAbsPipe implements PipeTransform {
   transform(value: number): any {
-    return Math.abs(value);
+    if (value && !isNaN(value)) return Math.abs(value);
+    return -1;
   }
 }
