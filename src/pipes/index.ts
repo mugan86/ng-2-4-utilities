@@ -6,6 +6,7 @@ import { ReverseStrPipe } from './str/reverse-str-pipe';
 import { TempConverterPipe } from './other/temp-converter.pipe';
 import { TrimPipe } from './str/trim.pipe';
 import { CapitalizePipe } from './str/capitalize.pipe';
+import { ConcatPipe } from './str/concat.pipe';
 import { WikipediaMobileUrlPipe} from './other/wikipedia-mobile-url.pipe';
 import { MathRoundPipe } from './math/round.pipe';
 import { MathFloorPipe } from './math/floor.pipe';
@@ -20,6 +21,7 @@ export * from './str/reverse-str-pipe';
 export * from './other/temp-converter.pipe';
 export * from './str/trim.pipe';
 export * from './str/capitalize.pipe';
+export * from './str/concat.pipe';
 export * from './other/wikipedia-mobile-url.pipe';
 export * from './math/round.pipe';
 export * from './math/floor.pipe';
@@ -35,6 +37,7 @@ export const PIPES = [
     TempConverterPipe,
     TrimPipe,
     CapitalizePipe,
+    ConcatPipe,
     WikipediaMobileUrlPipe,
     MathRoundPipe,
     MathFloorPipe,
