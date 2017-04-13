@@ -13,6 +13,7 @@ import { WikipediaMobileUrlPipe} from './src/pipes/wikipedia-mobile-url.pipe';
 import { MathRoundPipe } from './src/pipes/math/round.pipe';
 import { MathFloorPipe } from './src/pipes/math/floor.pipe';
 import { MathCeilPipe } from './src/pipes/math/ceil.pipe';
+import { MathAbsPipe } from './src/pipes/math/abs.pipe';
 import { UtilitiesService } from './src/utilities.service';
 
 export * from './src/utilities.component';
@@ -28,6 +29,7 @@ export * from './src/pipes/wikipedia-mobile-url.pipe';
 export * from './src/pipes/math/round.pipe';
 export * from './src/pipes/math/floor.pipe';
 export * from './src/pipes/math/ceil.pipe';
+export * from './src/pipes/math/abs.pipe';
 export * from './src/utilities.service';
 
 //Add import/exports components list
@@ -44,7 +46,8 @@ const COMPONENTS = [
     WikipediaMobileUrlPipe,
     MathRoundPipe,
     MathFloorPipe,
-    MathCeilPipe
+    MathCeilPipe,
+    MathAbsPipe
 ];
 
 @NgModule({
