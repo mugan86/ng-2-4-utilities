@@ -10,8 +10,8 @@ import { TempConverterPipe } from './src/pipes/temp-converter.pipe';
 import { TrimPipe } from './src/pipes/trim.pipe';
 import { CapitalizePipe } from './src/pipes/capitalize.pipe';
 import { WikipediaMobileUrlPipe} from './src/pipes/wikipedia-mobile-url.pipe';
-import { MathRoundPipe } from './src/pipes/math/math-round.pipe';
-import { MathFloorPipe } from './src/pipes/math/math-floor.pipe';
+import { MathRoundPipe } from './src/pipes/math/round.pipe';
+import { MathFloorPipe } from './src/pipes/math/floor.pipe';
 import { MathCeilPipe } from './src/pipes/math/ceil.pipe';
 import { UtilitiesService } from './src/utilities.service';
 
@@ -25,8 +25,8 @@ export * from './src/pipes/temp-converter.pipe';
 export * from './src/pipes/trim.pipe';
 export * from './src/pipes/capitalize.pipe';
 export * from './src/pipes/wikipedia-mobile-url.pipe';
-export * from './src/pipes/math/math-round.pipe';
-export * from './src/pipes/math/math-floor.pipe';
+export * from './src/pipes/math/round.pipe';
+export * from './src/pipes/math/floor.pipe';
 export * from './src/pipes/math/ceil.pipe';
 export * from './src/utilities.service';
 
