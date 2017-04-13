@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { SampleComponent } from './src/utilities.component';
 import { UtilitiesService } from './src/utilities.service';
-import { PipesModule } from './src/pipes';
+import { PipesModule } from './pipes';
 import { DirectivesModule } from './src/directives';
 
 export * from './src/utilities.component';
 export * from './src/utilities.service';
-export * from './src/pipes/';
+export * from './pipes';
 export * from './src/directives';
 
 //Add import/exports components list
