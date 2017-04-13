@@ -14,6 +14,7 @@ import { MathRoundPipe } from './src/pipes/math/round.pipe';
 import { MathFloorPipe } from './src/pipes/math/floor.pipe';
 import { MathCeilPipe } from './src/pipes/math/ceil.pipe';
 import { MathAbsPipe } from './src/pipes/math/abs.pipe';
+import { MathSqrtPipe } from './src/pipes/math/sqrt.pipe';
 import { UtilitiesService } from './src/utilities.service';
 
 export * from './src/utilities.component';
@@ -30,6 +31,7 @@ export * from './src/pipes/math/round.pipe';
 export * from './src/pipes/math/floor.pipe';
 export * from './src/pipes/math/ceil.pipe';
 export * from './src/pipes/math/abs.pipe';
+export * from './src/pipes/math/sqrt.pipe';
 export * from './src/utilities.service';
 
 //Add import/exports components list
@@ -47,7 +49,8 @@ const COMPONENTS = [
     MathRoundPipe,
     MathFloorPipe,
     MathCeilPipe,
-    MathAbsPipe
+    MathAbsPipe,
+    MathSqrtPipe
 ];
 
 @NgModule({
