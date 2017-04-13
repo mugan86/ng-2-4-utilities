@@ -26,12 +26,9 @@ export * from './src/pipes/wikipedia-mobile-url.pipe';
 export * from './src/pipes/math/math-round.pipe';
 export * from './src/utilities.service';
 
-@NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [
-    SampleComponent,
+//Add import/exports components list
+const COMPONENTS = [
+  SampleComponent,
     SampleDirective,
     DefaultImage,
     CreditCardMaskPipe,
@@ -42,19 +39,17 @@ export * from './src/utilities.service';
     CapitalizePipe,
     WikipediaMobileUrlPipe,
     MathRoundPipe
+];
+
+@NgModule({
+  imports: [
+    CommonModule
+  ],
+  declarations: [
+    COMPONENTS
   ],
   exports: [
-    SampleComponent,
-    SampleDirective,
-    DefaultImage,
-    CreditCardMaskPipe,
-    AllWordsCapitalizePipe,
-    ReverseStrPipe,
-    TempConverterPipe, 
-    TrimPipe, 
-    CapitalizePipe,
-    WikipediaMobileUrlPipe,
-    MathRoundPipe
+    COMPONENTS
   ]
 })
 export class UtilitiesModule {
