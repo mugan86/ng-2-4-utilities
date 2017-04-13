@@ -2,6 +2,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SampleComponent } from './src/utilities.component';
 import { SampleDirective } from './src/utilities.directive';
+import { DefaultImage } from './src/directives/default-image';
 import { CreditCardMaskPipe } from './src/pipes/credit-card-mask.pipe';
 import { AllWordsCapitalizePipe } from './src/pipes/all-words-capitalize.pipe';
 import { ReverseStrPipe } from './src/pipes/reverse-str-pipe';
@@ -12,6 +13,7 @@ import { WikipediaMobileUrlPipe} from './src/pipes/wikipedia-mobile-url.pipe';
 import { UtilitiesService } from './src/utilities.service';
 
 export * from './src/utilities.component';
+export * from './src/directives/default-image';
 export * from './src/utilities.directive';
 export * from './src/pipes/credit-card-mask.pipe';
 export * from './src/pipes/all-words-capitalize.pipe';
@@ -29,6 +31,7 @@ export * from './src/utilities.service';
   declarations: [
     SampleComponent,
     SampleDirective,
+    DefaultImage,
     CreditCardMaskPipe,
     AllWordsCapitalizePipe,
     ReverseStrPipe,
@@ -40,6 +43,7 @@ export * from './src/utilities.service';
   exports: [
     SampleComponent,
     SampleDirective,
+    DefaultImage,
     CreditCardMaskPipe,
     AllWordsCapitalizePipe,
     ReverseStrPipe,
