@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
  * Math.round(4.4) = 4
  */
 
-@Pipe({name: 'math-round'})
+@Pipe({name: 'mathRound'})
 export class MathRoundPipe implements PipeTransform {
   transform(value: number): any {
     return Math.round(value);
