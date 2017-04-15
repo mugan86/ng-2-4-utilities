@@ -4,3 +4,4 @@ export { CapitalizePipe } from './capitalize.pipe';
 export { ConcatPipe } from './concat.pipe';
 export { ReverseStrPipe } from './reverse-str.pipe';
 export { TrimPipe } from './trim.pipe';
+export { VocalHidePipe } from './vocal-hide.pipe';
