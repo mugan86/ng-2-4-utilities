@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { CreditCardMaskPipe } from './src/pipes/other/credit-card-mask.pipe';
 import { AllWordsCapitalizePipe } from './src/pipes/str/all-words-capitalize.pipe';
@@ -49,6 +49,7 @@ export const PIPES = [
 
 @NgModule({
   declarations: PIPES,
-  exports: PIPES
+  exports: PIPES,
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class PipesModule { }

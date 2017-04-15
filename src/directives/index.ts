@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 
 import { DefaultImage } from './default-image.directive';
 import { SampleDirective } from './utilities.directive';
@@ -13,6 +13,13 @@ export const DIRECTIVES = [
 
 @NgModule({
   declarations: DIRECTIVES,
-  exports: DIRECTIVES
+  exports: DIRECTIVES,
+  bootstrap:    DIRECTIVES
 })
-export class DirectivesModule { }
+export class DirectivesModule { 
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: DirectivesModule,
+    };
+  }
+}
