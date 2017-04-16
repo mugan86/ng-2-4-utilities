@@ -1,4 +1,4 @@
-import { NgModule, ModuleWithProviders  } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import { PipesStringModule } from './str';
 import { PipesMathModule } from './math';
