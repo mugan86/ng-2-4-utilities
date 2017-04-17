@@ -22,7 +22,7 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  
  Use in layout: 
  ```bash
- {{value | mathAbs}} 
+ {{x | mathAbs}} 
  {{-4.7 | mathAbs}} ---> 4.7
  {{4.7 | mathAbs}} ---> 4.7
  ```
@@ -35,7 +35,7 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  
  Use in layout: 
  ```bash
- {{value | mathCeil}} 
+ {{x | mathCeil}} 
  {{4.7 | mathCeil}} ---> 5
  {{4.4 | mathCeil}} ---> 5
  ```
@@ -48,7 +48,7 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  
  Use in layout: 
  ```bash
- {{value | mathFloor}} 
+ {{x | mathFloor}} 
  {{4.7 | mathFloor}} ---> 4
  {{4.4 | mathFloor}} ---> 4
  ```
@@ -63,6 +63,19 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  {{x | mathPow:y}} 
  {{8 | mathPow: 2}} ---> 64 (8^2 = 64)
  {{2 | mathPow:4}} ---> 16
+ ```
+
+5.- 'round': 
+
+ * Math.round(x) returns the value of x rounded to its nearest integer
+ * Math.round(4.7) = 5
+ * Math.round(4.4) = 4
+ 
+ Use in layout: 
+ ```bash
+ {{x | mathRound}} 
+ {{4.7 | mathRound}} ---> 5
+ {{4.4 | mathRound}} ---> 4
  ```
                 
  
