@@ -52,8 +52,20 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  {{4.7 | mathFloor}} ---> 4
  {{4.4 | mathFloor}} ---> 4
  ```
-                
 
+4.- 'pow': 
+
+ * Math.pow(x, y) returns the value of x to the power of y:
+ * Math.pow(8,2) = 64
+ 
+ Use in layout: 
+ ```bash
+ {{x | mathPow:y}} 
+ {{8 | mathPow: 2}} ---> 64 (8^2 = 64)
+ {{2 | mathPow:4}} ---> 16
+ ```
+                
+ 
 ## Consuming your library
 
 Once you have published your library to npm, you can import your library in any Angular application by running:
