@@ -14,6 +14,13 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
 
 #### Math Type pipes
 
+1.- 'abs': 
+/**
+ * Math.abs(x) returns the absolute (positive) value of x
+ * Math.abs(-4.7) = 4.7
+ * Math.abs(4.4) = 4.4
+ */
+
 ## Consuming your library
 
 Once you have published your library to npm, you can import your library in any Angular application by running:
