@@ -1,15 +1,15 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-@Pipe({name: 'vocalHide'})
-export class VocalHidePipe implements PipeTransform {
+@Pipe({name: 'vowelHide'})
+export class VowelHidePipe implements PipeTransform {
   transform(value: any) {
       if (value.length > 0) {
-        return this.replaceAllVocalWithAsterisk(value);
+        return this.replaceAllVowelWithAsterisk(value);
       }
       return "Not exist word";
   }
 
-  replaceAllVocalWithAsterisk(value: any)
+  replaceAllVowelWithAsterisk(value: any)
   {
     var str = "";
     for (let i = 0; i < value.length; i++)
