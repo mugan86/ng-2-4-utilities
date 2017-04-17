@@ -5,8 +5,8 @@ import { CapitalizePipe } from './capitalize.pipe';
 import { ConcatPipe } from './concat.pipe';
 import { ReverseStrPipe } from './reverse-str.pipe';
 import { TrimPipe } from './trim.pipe';
-import { VocalHidePipe } from './vocal-hide.pipe';
-import { NoVocalHidePipe } from './no-vocal-hide.pipe';
+import { VowelHidePipe } from './vowel-hide.pipe';
+import { NoVowelHidePipe } from './no-vowel-hide.pipe';
 
 export const PIPES = [
   AllWordsCapitalizePipe,
@@ -14,8 +14,8 @@ export const PIPES = [
   ConcatPipe,
   ReverseStrPipe,
   TrimPipe,
-  VocalHidePipe,
-  NoVocalHidePipe
+  VowelHidePipe,
+  NoVowelHidePipe
 ];
 
 @NgModule({
