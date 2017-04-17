@@ -8,7 +8,7 @@ To install this library, run:
 $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
 ```
 
-## Content of the library
+## Content of the library (Use in new programming release - 2017/04/19)
 
 ### Pipes
 
@@ -167,6 +167,19 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  ```bash
  {{'word/s' | vowelHide}} 
  {{'anartz' | vowelHide}} ---> '*n*rtz'
+ ```
+
+#### Other Type pipes
+
+1.- 'creditCardMask': 
+
+ * Input all words start with capitalize letter
+ 
+ Use in layout: 
+ ```bash
+ {{'card number' | creditCardMask}} 
+ {{343665987286008 | creditCardMask}} ---> '***********6008'
+ 
  ```
  
 ## Consuming your library
