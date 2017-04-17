@@ -22,9 +22,9 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  
  Use in layout: 
  ```bash
- {{value | abs}} 
- {{-4.7 | abs}} ---> 4.7
- {{4.7 | abs}} ---> 4.7
+ {{value | mathAbs}} 
+ {{-4.7 | mathAbs}} ---> 4.7
+ {{4.7 | mathAbs}} ---> 4.7
  ```
  
 2.- 'ceil': 
@@ -35,9 +35,22 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  
  Use in layout: 
  ```bash
- {{value | ceil}} 
- {{4.7 | abs}} ---> 5
- {{4.4 | abs}} ---> 5
+ {{value | mathCeil}} 
+ {{4.7 | mathCeil}} ---> 5
+ {{4.4 | mathCeil}} ---> 5
+ ```
+ 
+3.- 'floor': 
+
+ * Math.floor(x) returns the value of x rounded down to its nearest integer
+ * Math.floor(4.7) = 4
+ * Math.floor(4.4) = 4
+ 
+ Use in layout: 
+ ```bash
+ {{value | mathFloor}} 
+ {{4.7 | mathFloor}} ---> 4
+ {{4.4 | mathFloor}} ---> 4
  ```
                 
 
