@@ -2,8 +2,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 /**
- * Math.sqrt(x) returns the square root of x
- * Math.sqrt(64) = 8
+ * Math.pow(x, y) returns the value of x to the power of y:
+ * Math.pow(8,2) = 64
  */
 
 @Pipe({name: 'mathPow'})
