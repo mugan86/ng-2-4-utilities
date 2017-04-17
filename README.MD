@@ -109,14 +109,24 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  
  Use in layout: 
  ```bash
- {{'word/s' | allWordsCapitalize}} 
+ {{'word/s' | capitalize}} 
  {{'anartz mugika' | capitalize}} ---> 'Anartz mugika'
  {{'Anartz mugika' | capitalize}} ---> 'Anartz mugika'
  {{'first letter is uppercase' | capitalize}} ---> 'First letter is uppercase...'
  
  ```
+
+3.- 'concat': 
+
+ * Concat two words
  
-capitalize
+ Use in layout: 
+ ```bash
+ {{'word/s' | concat}} 
+ {{'anartz mugika' | concat:' text'}} ---> 'anartz mugika test'
+ 
+ ```
+ 
 ## Consuming your library
 
 Once you have published your library to npm, you can import your library in any Angular application by running:
