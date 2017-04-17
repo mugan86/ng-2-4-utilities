@@ -159,14 +159,14 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  {{'   anartz  ' | trim}} ---> 'anartz'
  ```
  
-7.- 'reverseStr':
+7.- 'vocalHide':
 
- * Invert all word chars
+ * Hide all vowels with '*'
  
  Use in layout: 
  ```bash
- {{'word/s' | reverseStr}} 
- {{'anartz' | reverseStr}} ---> 'ztrana'
+ {{'word/s' | vocalHide}} 
+ {{'anartz' | vocalHide}} ---> '*n*rtz'
  ```
  
 ## Consuming your library
