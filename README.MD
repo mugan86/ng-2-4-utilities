@@ -8,6 +8,12 @@ To install this library, run:
 $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
 ```
 
+## Content of the library
+
+### Pipes
+
+#### Math Type pipes
+
 ## Consuming your library
 
 Once you have published your library to npm, you can import your library in any Angular application by running:
@@ -16,6 +22,7 @@ Once you have published your library to npm, you can import your library in any 
 $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
 ```
 
+If you want to use all PipesDirectives
 and then from your Angular `AppModule`:
 
 ```typescript
