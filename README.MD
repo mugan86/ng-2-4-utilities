@@ -192,14 +192,14 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  
  ```
 
-3.- 'creditCardMask': 
+3.- 'wikipediaMobileUrl': 
 
- * Input all words start with capitalize letter
+ * Convert Wikipedia normal url to mobile url
  
  Use in layout: 
  ```bash
- {{'card number' | creditCardMask}} 
- {{343665987286008 | creditCardMask}} ---> '***********6008'
+ {{'url' | wikipediaMobileUrl}} 
+ {{'https://es.wikipedia.org/wiki/Angular_(framework)' | wikipediaMobileUrl}} ---> 'https://es.m.wikipedia.org/wiki/Angular_(framework)'
  
  ```
 
