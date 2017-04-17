@@ -89,7 +89,20 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  {{64 | mathRound}} ---> 8
  {{16 | mathRound}} ---> 4
  ```
-                
+#### String Type pipes
+
+1.- 'allWordsCapitalize': 
+
+ * Input all words start with capitalize letter
+ 
+ Use in layout: 
+ ```bash
+ {{'word/s' | allWordsCapitalize}} 
+ {{'anartz mugika' | allWordsCapitalize}} ---> 'Anartz Mugika'
+ {{'Anartz mugika' | allWordsCapitalize}} ---> 'Anartz Mugika'
+ {{'all words start with uppercase letter' | allWordsCapitalize}} ---> 'All Words Start With...'
+ 
+ ```
  
 ## Consuming your library
 
