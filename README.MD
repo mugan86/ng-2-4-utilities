@@ -26,6 +26,19 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  {{-4.7 | abs}} ---> 4.7
  {{4.7 | abs}} ---> 4.7
  ```
+ 
+2.- 'ceil': 
+
+ * Math.ceil(x) returns the value of x rounded up to its nearest integer
+ * Math.ceil(4.7) = 5
+ * Math.ceil(4.4) = 5
+ 
+ Use in layout: 
+ ```bash
+ {{value | ceil}} 
+ {{4.7 | abs}} ---> 5
+ {{4.4 | abs}} ---> 5
+ ```
                 
 
 ## Consuming your library
