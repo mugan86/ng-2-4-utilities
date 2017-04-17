@@ -89,6 +89,7 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  {{64 | mathRound}} ---> 8
  {{16 | mathRound}} ---> 4
  ```
+ 
 #### String Type pipes
 
 1.- 'allWordsCapitalize': 
@@ -146,7 +147,27 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  ```bash
  {{'word/s' | reverseStr}} 
  {{'anartz' | reverseStr}} ---> 'ztrana'
+ ```
  
+6.- 'trim':
+
+ * Remove all blank spaces in start and finish to select word or phrase
+ 
+ Use in layout: 
+ ```bash
+ {{'word/s' | trim}} 
+ {{'   anartz  ' | trim}} ---> 'anartz'
+ ```
+ 
+7.- 'reverseStr':
+
+ * Invert all word chars
+ 
+ Use in layout: 
+ ```bash
+ {{'word/s' | reverseStr}} 
+ {{'anartz' | reverseStr}} ---> 'ztrana'
+ ```
  
 ## Consuming your library
 
