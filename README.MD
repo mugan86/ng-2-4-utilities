@@ -5,7 +5,7 @@
 To install this library, run:
 
 ```bash
-$ npm install ng-2-4-utilities --save
+$ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
 ```
 
 ## Consuming your library
@@ -13,7 +13,7 @@ $ npm install ng-2-4-utilities --save
 Once you have published your library to npm, you can import your library in any Angular application by running:
 
 ```bash
-$ npm install ng-2-4-utilities
+$ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
 ```
 
 and then from your Angular `AppModule`:
