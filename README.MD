@@ -77,6 +77,18 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  {{4.7 | mathRound}} ---> 5
  {{4.4 | mathRound}} ---> 4
  ```
+ 
+6.- 'sqrt': 
+
+ * Math.sqrt(x) returns the square root of x
+ * Math.sqrt(64) = 8
+ 
+ Use in layout: 
+ ```bash
+ {{x | mathSqrt}} 
+ {{64 | mathRound}} ---> 8
+ {{16 | mathRound}} ---> 4
+ ```
                 
  
 ## Consuming your library
