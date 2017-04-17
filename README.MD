@@ -181,6 +181,28 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  {{343665987286008 | creditCardMask}} ---> '***********6008'
  
  ```
+2.- 'tempConverter': 
+
+ * Convert temperature to select unit F->Cº or inverse
+ 
+ Use in layout: 
+ ```bash
+ {{temperature_number | tempConverter:<convert-to: C (Celsius) or F (Farenheit)}} 
+ {{32 | tempConverter:'C'}} ---> 0 (Convert 32 F in Cº = 0)
+ 
+ ```
+
+3.- 'creditCardMask': 
+
+ * Input all words start with capitalize letter
+ 
+ Use in layout: 
+ ```bash
+ {{'card number' | creditCardMask}} 
+ {{343665987286008 | creditCardMask}} ---> '***********6008'
+ 
+ ```
+
  
 ## Consuming your library
 
