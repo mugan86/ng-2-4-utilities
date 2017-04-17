@@ -128,14 +128,14 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  
  ```
 
-4.- 'noVocalHide': 
+4.- 'noVowelHide': 
 
  * Hide all consonants with '*'
  
  Use in layout: 
  ```bash
- {{'word/s' | noVocalHide}} 
- {{'anartz mugika' | noVocalHide}} ---> 'a*a*****u*i*a'
+ {{'word/s' | noVowelHide}} 
+ {{'anartz mugika' | noVowelHide}} ---> 'a*a*****u*i*a'
  
  ```
  
@@ -159,14 +159,14 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  {{'   anartz  ' | trim}} ---> 'anartz'
  ```
  
-7.- 'vocalHide':
+7.- 'vowelHide':
 
  * Hide all vowels with '*'
  
  Use in layout: 
  ```bash
- {{'word/s' | vocalHide}} 
- {{'anartz' | vocalHide}} ---> '*n*rtz'
+ {{'word/s' | vowelHide}} 
+ {{'anartz' | vowelHide}} ---> '*n*rtz'
  ```
  
 ## Consuming your library
