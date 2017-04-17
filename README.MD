@@ -123,7 +123,18 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  Use in layout: 
  ```bash
  {{'word/s' | concat}} 
- {{'anartz mugika' | concat:' text'}} ---> 'anartz mugika test'
+ {{'anartz mugika' | concat:'text'}} ---> 'anartz mugika test'
+ 
+ ```
+
+4.- 'noVocalHide': 
+
+ * Hide all consonants with '*'
+ 
+ Use in layout: 
+ ```bash
+ {{'word/s' | noVocalHide}} 
+ {{'anartz mugika' | noVocalHide}} ---> 'a*a*****u*i*a'
  
  ```
  
