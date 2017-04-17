@@ -138,6 +138,16 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  
  ```
  
+5.- 'reverseStr':
+
+ * Invert all word chars
+ 
+ Use in layout: 
+ ```bash
+ {{'word/s' | reverseStr}} 
+ {{'anartz' | reverseStr}} ---> 'ztrana'
+ 
+ 
 ## Consuming your library
 
 Once you have published your library to npm, you can import your library in any Angular application by running:
