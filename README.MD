@@ -15,11 +15,18 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
 #### Math Type pipes
 
 1.- 'abs': 
-/**
+
  * Math.abs(x) returns the absolute (positive) value of x
  * Math.abs(-4.7) = 4.7
  * Math.abs(4.4) = 4.4
- */
+ 
+ Use in layout: 
+ ```bash
+ {{value | abs}} 
+ {{-4.7 | abs}} ---> 4.7
+ {{4.7 | abs}} ---> 4.7
+ ```
+                
 
 ## Consuming your library
 
@@ -85,3 +92,5 @@ $ npm run lint
 ## License
 
 MIT © [Anartz Mugika Ledo](mailto:mugan86@gmail.com)
+
+
