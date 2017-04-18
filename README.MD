@@ -100,14 +100,23 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  {{64 | sum:3}} ---> 67
  ```
 
-7.- 'subtract': 
+8.- 'subtract': 
 
  * x-y returns sum x - y
  
  Use in layout: 
  ```bash
  {{x | subtract:y}} 
- {{64 | sum:3}} ---> 61
+ {{64 | subtract:3}} ---> 61
+ ```
+9.- 'multiply': 
+
+ * x*y returns sum x * y
+ 
+ Use in layout: 
+ ```bash
+ {{x | multiply:y}} 
+ {{2 | multiply:4}} ---> 8
  ```
  
 #### String Type pipes
