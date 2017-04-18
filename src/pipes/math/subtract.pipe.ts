@@ -9,7 +9,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({name: 'mathSubtract'})
 export class MathSubtractPipe implements PipeTransform {
   transform(value: number, values: number[]): any {
-    if (value && !isNaN(value)) this.makeAllSubtracts(value, values);
+    if (value && !isNaN(value)) return this.makeAllSubtracts(value, values);
     return -1;
   }
 
