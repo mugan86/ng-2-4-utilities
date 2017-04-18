@@ -119,7 +119,7 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  {{2 | multiply:4}} ---> 8
  ```
 
-10.- 'multiply': 
+10.- 'divide': 
 
  * x/y returns sum x / y
  
