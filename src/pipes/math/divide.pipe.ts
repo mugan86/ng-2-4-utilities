@@ -9,7 +9,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({name: 'mathDivide'})
 export class MathDividePipe implements PipeTransform {
   transform(value: number, values: number[]): any {
-    if (value && !isNaN(value)) this.makeAllDivisions(value, values);
+    if (value && !isNaN(value)) return this.makeAllDivisions(value, values);
     return -1;
   }
 
