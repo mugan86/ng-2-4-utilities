@@ -6,6 +6,7 @@ import { MathCeilPipe } from './ceil.pipe';
 import { MathAbsPipe } from './abs.pipe';
 import { MathSqrtPipe } from './sqrt.pipe';
 import { MathPowPipe } from './pow.pipe';
+import { MathSubtractPipe } from './subtract.pipe';
 import { MathSumPipe } from './sum.pipe';
 
 export const PIPES = [
@@ -15,6 +16,7 @@ export const PIPES = [
   MathAbsPipe,
   MathSqrtPipe,
   MathPowPipe,
+  MathSubtractPipe,
   MathSumPipe
 ];
 
