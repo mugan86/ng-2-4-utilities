@@ -175,13 +175,13 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
 
  * Input all words start with capitalize letter
  
- Use in layout: 
+ 1.1.- Use in layout: 
  ```bash
  {{'card number' | creditCardMask}} 
  {{343665987286008 | creditCardMask}} ---> '***********6008'
  ```
 
- Transform inside component:
+ 1.2.- Transform inside component:
  ```typescript
  import { CreditCardMaskPipe } from 'ng-2-4-utilities';
  @Component()
@@ -196,10 +196,23 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
 
  * Convert temperature to select unit F->Cº or inverse
  
- Use in layout: 
+ 2.1.- Use in layout: 
  ```bash
  {{temperature_number | tempConverter:<convert-to: C (Celsius) or F (Farenheit)}} 
  {{32 | tempConverter:'C'}} ---> 0 (Convert 32 F in Cº = 0)
+ 
+ ```
+
+ 2.2.- Transform inside component:
+ ```typescript
+ import { TempConverterPipe } from 'ng-2-4-utilities';
+ @Component()
+ export class AppComponent()
+ {
+   //Convert 32 F to Celsius --> 32 --> 0ºC
+    ...
+    new TempConverterPipe().transform(32,"C"));
+ }
  
  ```
 
