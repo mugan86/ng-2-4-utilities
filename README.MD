@@ -89,6 +89,16 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  {{64 | mathRound}} ---> 8
  {{16 | mathRound}} ---> 4
  ```
+
+7.- 'sum': 
+
+ * x+y returns sum x + y
+ 
+ Use in layout: 
+ ```bash
+ {{x | sum:y}} 
+ {{64 | sum:3}} ---> 67
+ ```
  
 #### String Type pipes
 
