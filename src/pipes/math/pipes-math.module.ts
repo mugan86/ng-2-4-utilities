@@ -1,5 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
+import { MathDividePipe } from './divide.pipe';
 import { MathRoundPipe } from './round.pipe';
 import { MathFloorPipe } from './floor.pipe';
 import { MathCeilPipe } from './ceil.pipe';
@@ -10,6 +11,7 @@ import { MathSubtractPipe } from './subtract.pipe';
 import { MathSumPipe } from './sum.pipe';
 
 export const PIPES = [
+  MathDividePipe,
   MathRoundPipe,
   MathFloorPipe,
   MathCeilPipe,
