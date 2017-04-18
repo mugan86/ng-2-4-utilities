@@ -6,6 +6,7 @@ import { MathCeilPipe } from './ceil.pipe';
 import { MathAbsPipe } from './abs.pipe';
 import { MathSqrtPipe } from './sqrt.pipe';
 import { MathPowPipe } from './pow.pipe';
+import { MathSumPipe } from './sum.pipe';
 
 export const PIPES = [
   MathRoundPipe,
@@ -13,7 +14,8 @@ export const PIPES = [
   MathCeilPipe,
   MathAbsPipe,
   MathSqrtPipe,
-  MathPowPipe
+  MathPowPipe,
+  MathSumPipe
 ];
 
 @NgModule({
