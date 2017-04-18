@@ -96,37 +96,57 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  
  Use in layout: 
  ```bash
- {{x | sum:y}} 
- {{64 | sum:3}} ---> 67
+ {{x | mathSum:y}} 
+ {{64 | mathSum:3}} ---> 67
  ```
 
 8.- 'subtract': 
 
- * x-y returns sum x - y
+ * x-y returns subtract x - y
  
  Use in layout: 
  ```bash
- {{x | subtract:y}} 
- {{64 | subtract:3}} ---> 61
+ {{x | mathSubtract:y}} 
+ {{64 | mathSubtract:3}} ---> 61
  ```
 9.- 'multiply': 
 
- * x*y returns sum x * y
+ * x*y returns multiply x * y
  
  Use in layout: 
  ```bash
- {{x | multiply:y}} 
- {{2 | multiply:4}} ---> 8
+ {{x | mathMultiply:y}} 
+ {{2 | mathMultiply:4}} ---> 8
  ```
 
 10.- 'divide': 
 
- * x/y returns sum x / y
+ * x/y returns divide x / y
  
  Use in layout: 
  ```bash
- {{x | divide:y}} 
- {{4 | multiply:4}} ---> 1
+ {{x | mathDivide:y}} 
+ {{4 | mathDivide:4}} ---> 1
+ ```
+
+11.- 'prime': 
+
+ * Check if input number prime
+ 
+ Use in layout: 
+ ```bash
+ {{x | mathPrime}} 
+ {{4 | mathPrime}} ---> false
+ ```
+
+12.- 'factorial': 
+
+ * Return input number value factorial (3!)
+ 
+ Use in layout: 
+ ```bash
+ {{x | mathFactorial}} 
+ {{3 | mathFactorial}} ---> 3! = 1*2*3 = 6
  ```
  
 #### String Type pipes
