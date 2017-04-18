@@ -5,4 +5,5 @@ export { MathFloorPipe } from './floor.pipe';
 export { MathPowPipe } from './pow.pipe';
 export { MathRoundPipe } from './round.pipe';
 export { MathSqrtPipe } from './sqrt.pipe';
+export { MathSumPipe } from './sum.pipe';
 
