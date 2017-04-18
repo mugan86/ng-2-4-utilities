@@ -179,6 +179,17 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  ```bash
  {{'card number' | creditCardMask}} 
  {{343665987286008 | creditCardMask}} ---> '***********6008'
+ ```
+
+ Transform inside component:
+ ```typescript
+ import { CreditCardMaskPipe } from 'ng-2-4-utilities';
+ @Component()
+ export class AppComponent()
+ {
+    ...
+    new CreditCardMaskPipe().transform("343665987286008");
+ }
  
  ```
 2.- 'tempConverter': 
