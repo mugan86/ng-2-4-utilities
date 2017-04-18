@@ -118,6 +118,16 @@ $ npm install https://github.com/mugan86/ng-2-4-utilities.git#0.1.6 --save
  {{x | multiply:y}} 
  {{2 | multiply:4}} ---> 8
  ```
+
+10.- 'multiply': 
+
+ * x/y returns sum x / y
+ 
+ Use in layout: 
+ ```bash
+ {{x | divide:y}} 
+ {{4 | multiply:4}} ---> 1
+ ```
  
 #### String Type pipes
 
