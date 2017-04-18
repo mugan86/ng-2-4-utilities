@@ -9,7 +9,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({name: 'mathMultiply'})
 export class MathMultiplyPipe implements PipeTransform {
   transform(value: number, values: number[]): any {
-    if (value && !isNaN(value)) this.makeAllMultiplies(value, values);
+    if (value && !isNaN(value)) return this.makeAllMultiplies(value, values);
     return -1;
   }
 
