@@ -9,7 +9,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({name: 'mathSum'})
 export class MathSumPipe implements PipeTransform {
   transform(value: number, values: number[]): any {
-    if (value && !isNaN(value)) this.makeAllSums(value, values);
+    if (value && !isNaN(value)) return this.makeAllSums(value, values);
     return -1;
   }
 
