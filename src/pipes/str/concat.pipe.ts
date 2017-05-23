@@ -4,8 +4,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ConcatPipe implements PipeTransform {
   transform(value: any, concatStr: any) {
       if (value && concatStr) {
-        return value.concat(" ", concatStr)
+        return value.concat(' ', concatStr)
       }
-      return "Not concat";
+      return 'Not concat';
   }
 }

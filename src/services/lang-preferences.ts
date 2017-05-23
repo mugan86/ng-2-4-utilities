@@ -30,7 +30,7 @@ export class LanguageConfigService {
         // Check if exist selection in preferences
         if (this.selectLanguage === '') { // Not configure select language
             const browserLang = this.translate.getBrowserLang();
-            this.selectLanguage = browserLang.match(/en|es|eu/) ? browserLang : 'es';
+            this.selectLanguage = browserLang.match(/en|es|eu|de|fr|pt/) ? browserLang : 'es';
             this.change(String(this.selectLanguage));
         }
 
@@ -54,7 +54,7 @@ export class LanguageConfigService {
     }
 
     // Changes language preference for the whole app
-    change(language) {
+    change(language: string) {
         window.localStorage.setItem('selectLanguage', language);
     }
 

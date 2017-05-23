@@ -12,7 +12,7 @@ export const DIRECTIVES = [
   declarations: DIRECTIVES,
   exports: DIRECTIVES
 })
-export class DirectivesModule { 
+export class DirectivesModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: DirectivesModule,
