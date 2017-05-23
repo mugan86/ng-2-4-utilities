@@ -7,6 +7,7 @@ import { DirectivesModule } from './directives';
 import { TranslateModule, TranslateLoader  } from '@ngx-translate/core';
 import { createTranslateLoader } from './services/translate-loader';
 import { Http } from '@angular/http';
+import { LanguageConfigService } from './services/lang-preferences';
 
 export const MODULES = [
     PipesModule,
@@ -26,4 +27,13 @@ export const MODULES = [
   ],
   exports: [ MODULES ]
 })
-export class UtilitiesModule { }
+export class UtilitiesModule {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: UtilitiesModule,
+      providers:    [
+        LanguageConfigService
+      ]
+    };
+  }
+}
